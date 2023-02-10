@@ -929,7 +929,7 @@ body.nav-opened .nav {
 		margin-bottom:20px;
 	 padding-bottom:0;
 	 max-width:100%;
-	 background:#fff;
+	 background:#E6E6E6;
 	overflow:hidden;
 }
 .grid-item .post img {
@@ -2026,7 +2026,7 @@ footer.site-footer:after {
 body.nav-opened {
 	padding-top:0;
 }
-.main-nav ul {
+/*.main-nav ul {
 	list-style:none;
 	margin:0px 0;
 	text-align:center;
@@ -2039,7 +2039,7 @@ body.nav-opened {
 }
 .main-nav ul li a {
 	padding:0 10px;
-}
+}*/
 @font-face {
 	font-family:'Mono Social Icons Font';
 	src:url('../fonts/MonoSocialIconsFont-1.10.eot');
@@ -2186,10 +2186,6 @@ div#preloader {
 	-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.25);
 	-moz-box-shadow:0 1px 0 rgba(0,0,0,0.25);
 	box-shadow:0 1px 0 rgba(0,0,0,0.25);
-}
-.slicknav_menu:before {
-	content:" ";
-	display:table;
 }
 .slicknav_menu:after {
 	content:" ";
