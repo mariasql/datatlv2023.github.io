@@ -924,13 +924,12 @@ body.nav-opened .nav {
 }
 .grid-item .post {
 	position:relative;
-	border:#EBF2F6 1px solid;
+	border:#EBF2F6 5px solid;
 	word-wrap:break-word;
 		margin-bottom:20px;
 	 padding-bottom:0;
 	 max-width:100%;
-	 background:#E6E6E6;
-	overflow:hidden;
+     overflow:hidden;
 }
 .grid-item .post img {
 	margin-bottom:-10px;
@@ -2026,7 +2025,7 @@ footer.site-footer:after {
 body.nav-opened {
 	padding-top:0;
 }
-/*.main-nav ul {
+.main-nav ul {
 	list-style:none;
 	margin:0px 0;
 	text-align:center;
@@ -2039,7 +2038,7 @@ body.nav-opened {
 }
 .main-nav ul li a {
 	padding:0 10px;
-}*/
+}
 @font-face {
 	font-family:'Mono Social Icons Font';
 	src:url('../fonts/MonoSocialIconsFont-1.10.eot');
