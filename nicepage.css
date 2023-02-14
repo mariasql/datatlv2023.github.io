@@ -40283,15 +40283,16 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 36px;
+  min-height: 59px;
 }
 
 .u-header .u-menu-1 {
-  margin: 0 0 0 auto;
+  margin: 4px -20px 4px auto;
 }
 
 .u-header .u-nav-1 {
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   letter-spacing: normal;
 }
 
@@ -40303,7 +40304,11 @@ a.u-link.u-text-hover-grey-90:hover {
     width: auto;
   }
 }
-
+@media (max-width: 991px) {
+  .u-header .u-menu-1 {
+    margin-top: 7px;
+  }
+}
 
 
  .u-footer {
