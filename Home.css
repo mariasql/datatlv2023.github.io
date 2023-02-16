@@ -425,7 +425,7 @@
   font-weight: 700;
   font-family: Raleway, sans-serif;
   width: 380px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
 
 .u-section-2 .u-list-1 {
@@ -699,7 +699,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
-  margin: 35px 15px 0;
+  margin: 35px 8px 0;
 }
 
 .u-section-4 .u-btn-1 {
@@ -708,7 +708,7 @@
   text-transform: none;
   font-family: Poppins;
   background-image: none;
-  margin: 20px auto 0;
+  margin: 21px auto 0;
 }
 
 .u-section-4 .u-list-item-2 {
@@ -733,7 +733,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
-  margin: 35px 15px 0;
+  margin: 35px 8px 0;
 }
 
 .u-section-4 .u-btn-2 {
@@ -742,7 +742,7 @@
   text-transform: none;
   font-family: Poppins;
   background-image: none;
-  margin: 20px auto 0;
+  margin: 21px auto 0;
 }
 
 .u-section-4 .u-list-item-3 {
@@ -767,7 +767,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
-  margin: 35px 15px 0;
+  margin: 35px 8px 0;
 }
 
 .u-section-4 .u-btn-3 {
@@ -776,7 +776,7 @@
   text-transform: none;
   font-family: Poppins;
   background-image: none;
-  margin: 20px auto 0;
+  margin: 21px auto 0;
 }
 
 @media (max-width: 1199px) {
