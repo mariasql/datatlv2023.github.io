@@ -41346,7 +41346,11 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 
-
+@media (max-width: 575px) {
+  .u-header .u-menu-1 {
+    margin-left: calc(((100% - 340px) / 2) + -46px);
+  }
+}
  .u-footer {
   background-image: none;
 }
