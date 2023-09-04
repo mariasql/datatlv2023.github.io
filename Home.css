@@ -313,7 +313,6 @@
 
 .u-section-2 .u-repeater-2 {
   grid-template-columns: calc(33.3333% - 20px) calc(33.3333% - 20px) calc(33.3333% - 20px);
-  min-height: 371px;
   grid-gap: 30px 30px;
   grid-auto-columns: calc(33.3333% - 20px);
 }
@@ -324,7 +323,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  background-image: url("images/madeira.jpeg");
+  background-image: url("images/madeira._photo-resizer.ru.jpeg");
   background-position: 43.88% 50%;
 }
 
@@ -338,7 +337,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  background-image: url("images/cvcv.jpg?rand=4931");
+  background-image: url("images/cvcv.jpg?rand=82ea");
 }
 
 .u-section-2 .u-container-layout-6 {
@@ -351,7 +350,8 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  background-image: url("images/cvcv.jpg?rand=82ea");
+  background-image: url("images/788c91c3-35cb-4f85-9a4b-477e6638412c.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-2 .u-container-layout-7 {
@@ -397,7 +397,6 @@
 
   .u-section-2 .u-repeater-2 {
     grid-template-columns: repeat(3, calc(33.333333333333336% - 20px));
-    min-height: 302px;
     grid-auto-columns: calc(33.333333333333336% - 20px);
   }
 
@@ -405,7 +404,7 @@
     background-position: 44.15% 50%;
   }
 
-  .u-section-2 .u-image-7 {
+  .u-section-2 .u-image-6 {
     background-position: 50% 50%;
   }
 }
@@ -440,7 +439,10 @@
   }
 
   .u-section-2 .u-list-2 {
+    width: 963px;
     margin-top: 1196px;
+    margin-right: auto;
+    margin-left: -50px;
   }
 
   .u-section-2 .u-repeater-2 {
@@ -450,7 +452,7 @@
   }
 
   .u-section-2 .u-image-5 {
-    background-position: 32.79% 50%;
+    background-position: 43.39% 50%;
   }
 }
 
@@ -483,6 +485,8 @@
 
   .u-section-2 .u-list-2 {
     margin-top: 100px;
+    width: 540px;
+    margin-left: 0;
   }
 
   .u-section-2 .u-repeater-2 {
@@ -534,6 +538,7 @@
   .u-section-2 .u-list-2 {
     margin-top: 1074px;
     margin-bottom: 9px;
+    width: 340px;
   }
 
   .u-section-2 .u-repeater-2 {
