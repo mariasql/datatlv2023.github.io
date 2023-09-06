@@ -147,59 +147,97 @@
   min-height: 1379px;
 }
 
+. .u-section-2 {
+  background-image: none;
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 632px;
+}
+
+.u-section-2 .u-group-1 {
+  width: 570px;
+  min-height: 52px;
+  height: auto;
+  margin: 20px auto 0;
+}
+
+.u-section-2 .u-container-layout-1 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .u-section-2 .u-text-1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin: 51px auto 0;
-}
-
-.u-section-2 .u-image-1 {
-  width: 554px;
-  height: 303px;
-  margin: 141px auto 0;
-}
-
-.u-section-2 .u-image-2 {
-  width: 534px;
-  height: 722px;
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 1371px;
+.u-section-2 .u-group-2 {
+  width: 800px;
+  min-height: 342px;
+  height: auto;
+  margin: 0 152px 60px auto;
+}
+
+.u-section-2 .u-container-layout-2 {
+  padding: 0 30px 30px;
+}
+
+.u-section-2 .u-image-1 {
+  width: 362px;
+  height: 328px;
+  margin: 0 auto -26px 174px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-group-1 {
+    height: auto;
   }
 
-  .u-section-2 .u-text-1 {
-    margin-top: 1275px;
+  .u-section-2 .u-group-2 {
+    margin-right: 140px;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-group-2 {
+    width: 720px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-group-1 {
+    width: 540px;
+  }
+
+  .u-section-2 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-2 .u-group-2 {
+    width: 540px;
   }
 
   .u-section-2 .u-image-1 {
-    width: 540px;
-    height: 295px;
-    margin-top: -1083px;
+    margin-left: 158px;
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 992px;
+  .u-section-2 .u-group-1 {
+    width: 340px;
   }
 
-  .u-section-2 .u-text-1 {
-    margin-top: 904px;
-    font-size: 1.5rem;
+  .u-section-2 .u-group-2 {
+    width: 340px;
   }
 
   .u-section-2 .u-image-1 {
-    width: 340px;
-    height: 186px;
-    margin-top: -704px;
-  }
-
-  .u-section-2 .u-image-2 {
-    width: 340px;
-    height: 460px;
+    width: 320px;
+    height: 290px;
+    margin-left: 0;
   }
 } .u-section-3 {
   background-image: url("images/backgr.png");
