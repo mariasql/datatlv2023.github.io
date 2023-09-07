@@ -23,8 +23,8 @@
 }
 
 .u-section-1 .u-text-1 {
-  font-family: Oswald, sans-serif;
-  font-size: 3.75rem;
+  font-family: Copperplate;
+  font-size: 3.5rem;
   margin: 0 auto;
 }
 
@@ -40,15 +40,16 @@
 
 .u-section-1 .u-image-1 {
   height: 105px;
-  width: 570px;
+  width: 700px;
   margin: 69px auto 0;
 }
 
 .u-section-1 .u-text-2 {
   font-size: 2.25rem;
+  font-family: Copperplate;
   font-weight: 700;
-  width: 547px;
-  margin: 119px auto 0;
+  width: 600px;
+  margin: 50px auto 0;
 }
 
 .u-section-1 .u-text-3 {
@@ -143,15 +144,17 @@
     width: 340px;
   }
 }.u-section-2 .u-sheet-1 {
-  min-height: 1379px;
+  min-height: 1000px;
+  background-color: #E5E4E2;
+  margin: 20px auto auto auto;
 }
 
-. .u-section-2 {
+. u-section-2 {
   background-image: none;
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 632px;
+  min-height: 200px;
 }
 
 .u-section-2 .u-group-1 {
@@ -245,6 +248,8 @@
 
 .u-section-22 .u-sheet-1 {
   min-height: 632px;
+  background-color: #FFD700;
+  margin: 20px auto 20px auto;
 }
 
 .u-section-22 .u-group-1 {
