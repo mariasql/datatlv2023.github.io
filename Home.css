@@ -140,17 +140,17 @@
 }
 
 .u-section-2 .u-text-2 {
-  font-size: 1.875rem;
-  font-weight: normal;
   width: 297px;
-  margin: 24px auto 0;
+  font-size: 1.875rem;
+  background-image: none;
+  margin: 30px auto 0;
 }
 
 .u-section-2 .u-text-3 {
   font-size: 1.875rem;
   font-weight: normal;
   width: 389px;
-  margin: 15px auto 0;
+  margin: 9px auto 0;
 }
 
 .u-section-2 .u-btn-1 {
@@ -158,7 +158,7 @@
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 1px;
-  margin: 93px auto 0;
+  margin: 50px auto 0;
 }
 
 @media (max-width: 1199px) {
@@ -224,7 +224,7 @@
   }
 
   .u-section-2 .u-btn-1 {
-    margin-top: 93px;
+    margin-top: 50px;
   }
 }
 
