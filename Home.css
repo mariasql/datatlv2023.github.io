@@ -106,7 +106,12 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 550px;
+    min-height: 273px;
+  }
+
+  .u-section-1 .u-gallery-1 {
+    margin-top: 35px;
+    margin-bottom: -312px;
   }
 } .u-section-2 {
   background-image: linear-gradient(0deg, rgba(233,242,250,0.8), rgba(233,242,250,0.8)), url("images/beer4.jpg");
@@ -118,16 +123,13 @@
 }
 
 .u-section-2 .u-group-1 {
-  min-height: 521px;
-  width: 689px;
-  height: auto;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 0.3;
   background-image: linear-gradient(#f2f2f2, #4c7397);
-  margin: 50px auto 60px;
+  margin-top: 50px;
 }
 
 .u-section-2 .u-container-layout-1 {
@@ -136,7 +138,7 @@
 
 .u-section-2 .u-text-1 {
   font-size: 3rem;
-  margin: 0 59px;
+  margin: 0 auto;
 }
 
 .u-section-2 .u-text-2 {
@@ -166,13 +168,6 @@
     min-height: 661px;
   }
 
-  .u-section-2 .u-group-1 {
-    min-height: 551px;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    height: auto;
-  }
-
   .u-section-2 .u-text-2 {
     margin-top: 34px;
   }
@@ -182,7 +177,7 @@
   }
 
   .u-section-2 .u-btn-1 {
-    margin-top: 88px;
+    margin-top: 30px;
   }
 }
 
@@ -201,17 +196,13 @@
 
   .u-section-2 .u-btn-1 {
     margin-top: 64px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-2 .u-sheet-1 {
     min-height: 802px;
-  }
-
-  .u-section-2 .u-group-1 {
-    width: 540px;
-    min-height: 730px;
   }
 
   .u-section-2 .u-container-layout-1 {
@@ -238,9 +229,14 @@
   }
 
   .u-section-2 .u-group-1 {
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    min-height: 50px;
+    width: 100%;
+  }
+
+  .u-section-2 .u-container-layout-1 {
+    padding-bottom: 0;
   }
 
   .u-section-2 .u-text-1 {
@@ -249,11 +245,17 @@
   }
 
   .u-section-2 .u-text-2 {
-    margin-top: -74px;
+    margin-top: 20px;
   }
 
   .u-section-2 .u-text-3 {
     width: 340px;
+    margin-top: 0;
+  }
+
+  .u-section-2 .u-btn-1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 }.u-section-3 .u-sheet-1 {
   min-height: 552px;
@@ -783,6 +785,130 @@
 
 @media (max-width: 575px) {
   .u-section-6 .u-sheet-1 {
+    min-height: 1110px;
+  }
+}
+
+.u-section-7 .u-sheet-1 {
+  min-height: 228px;
+}
+
+.u-section-7 .u-list-1 {
+  grid-template-rows: auto;
+  margin: 0;
+}
+
+.u-section-6 .u-repeater-1 {
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  min-height: 228px;
+  grid-gap: 0px 0px;
+}
+
+.u-section-7 .u-container-layout-1 {
+  padding: 20px 30px 0;
+}
+
+.u-section-7 .u-image-1 {
+  height: 135px;
+  width: 245px;
+  margin: 0 auto;
+}
+
+.u-section-7 .u-text-1 {
+  font-weight: 700;
+  margin: 20px auto 0;
+}
+
+.u-section-7 .u-container-layout-2 {
+  padding: 20px 30px 0;
+}
+
+.u-section-7 .u-image-2 {
+  height: 135px;
+  width: 245px;
+  margin: 0 auto;
+}
+
+.u-section-7 .u-text-2 {
+  font-weight: 700;
+  margin: 20px auto 0;
+}
+
+.u-section-7 .u-container-layout-3 {
+  padding: 20px 30px 0;
+}
+
+.u-section-7 .u-image-3 {
+  height: 135px;
+  width: 245px;
+  margin: 0 auto;
+}
+
+.u-section-7 .u-text-3 {
+  font-weight: 700;
+  margin: 20px auto 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 231px;
+  }
+
+  .u-section-7 .u-list-1 {
+    margin-bottom: 20px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-7 .u-repeater-1 {
+    min-height: 211px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 485px;
+  }
+
+  .u-section-7 .u-list-1 {
+    margin-bottom: 0;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-7 .u-repeater-1 {
+    grid-template-columns: repeat(2, 50%);
+    min-height: 485px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 683px;
+  }
+
+  .u-section-7 .u-repeater-1 {
+    grid-template-columns: 100%;
+  }
+
+  .u-section-7 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-7 .u-sheet-1 {
     min-height: 1110px;
   }
 }
