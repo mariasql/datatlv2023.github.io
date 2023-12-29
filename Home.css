@@ -157,7 +157,8 @@ text-align:center
   width: 389px;
   margin: 9px auto 0;
 }
-
+.button {
+}
 .u-section-2 .u-btn-1 {
   font-weight: 700;
   text-transform: uppercase;
