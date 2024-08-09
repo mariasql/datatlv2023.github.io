@@ -11,21 +11,12 @@
   margin: 49px auto 0;
 }
 
-.u-section-1 .u-text-2 {
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 0.3;
-  margin: 20px auto 0;
-}
-
 .u-section-1 .u-layout-wrap-1 {
-  margin: 36px 0 0;
+  margin: 85px 0 0;
 }
 
 .u-section-1 .u-image-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/beautiful-tropical-beach-sea_74190-6787.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/20240229-0634K80.jpg");
   background-position: 50% 50%;
   min-height: 278px;
   --animation-custom_in-translate_x: 0px;
@@ -40,7 +31,7 @@
 }
 
 .u-section-1 .u-image-2 {
-  background-image: url("images/travel-trekking-summer-landscape-mountains-green-grass-trees-blue-sky_146671-18447.jpg");
+  background-image: url("images/20240229-0264K80.jpg");
   background-position: 50% 50%;
   min-height: 278px;
   --animation-custom_in-translate_x: 0px;
@@ -55,7 +46,7 @@
 }
 
 .u-section-1 .u-image-3 {
-  background-image: url("images/6547.jpg");
+  background-image: url("images/20240229-0054K80.jpg");
   background-position: 50% 50%;
   min-height: 278px;
 }
@@ -65,7 +56,7 @@
 }
 
 .u-section-1 .u-image-4 {
-  background-image: url("images/g.jpg");
+  background-image: url("images/20240229-0604K80.jpg");
   background-position: 50% 50%;
   min-height: 278px;
 }
@@ -76,7 +67,7 @@
 
 .u-section-1 .u-image-5 {
   min-height: 556px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/l.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/20240229-0334K80.jpg");
   background-position: 50% 50%;
   --animation-custom_in-translate_x: 300px;
   --animation-custom_in-translate_y: 0px;
@@ -90,7 +81,7 @@
 }
 
 .u-section-1 .u-image-6 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/sea-beach_1203-3515.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/20240229-0384K80.jpg");
   background-position: 50% 50%;
   min-height: 278px;
   --animation-custom_in-translate_x: 0px;
@@ -105,7 +96,7 @@
 }
 
 .u-section-1 .u-image-7 {
-  background-image: url("images/beautiful-countryside-road-greenery-forests_181624-5399.jpg");
+  background-image: url("images/20240229-0424K80.jpg");
   background-position: 50% 50%;
   min-height: 278px;
   --animation-custom_in-translate_x: 300px;
@@ -163,6 +154,12 @@
     min-height: 1967px;
   }
 
+  .u-section-1 .u-layout-wrap-1 {
+    margin-top: 114px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
   .u-section-1 .u-image-1 {
     min-height: 263px;
   }
@@ -199,6 +196,12 @@
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
     min-height: 3174px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    margin-top: 107px;
+    margin-right: initial;
+    margin-left: initial;
   }
 
   .u-section-1 .u-image-1 {
@@ -286,93 +289,5 @@
 
   .u-section-1 .u-image-7 {
     min-height: 248px;
-  }
-}.u-section-2 .u-sheet-1 {
-  min-height: 613px;
-}
-
-.u-section-2 .u-gallery-1 {
-  width: 689px;
-  height: 545px;
-  grid-gap: 10px 10px;
-  margin: 9px auto 60px;
-}
-
-.u-section-2 .u-carousel-item-1 {
-  margin-right: 0;
-}
-
-.u-section-2 .u-over-slide-1 {
-  min-height: 100px;
-  padding: 10px;
-}
-
-.u-section-2 .u-carousel-item-2 {
-  margin-right: 0;
-}
-
-.u-section-2 .u-over-slide-2 {
-  min-height: 100px;
-  padding: 10px;
-}
-
-.u-section-2 .u-carousel-item-3 {
-  margin-right: 0;
-}
-
-.u-section-2 .u-over-slide-3 {
-  min-height: 100px;
-  padding: 10px;
-}
-
-.u-section-2 .u-carousel-thumbnails-1 {
-  padding-top: 10px;
-}
-
-.u-section-2 .u-carousel-thumbnail-1 {
-  width: 100px;
-  height: 100px;
-}
-
-.u-section-2 .u-carousel-thumbnail-2 {
-  width: 100px;
-  height: 100px;
-}
-
-.u-section-2 .u-carousel-thumbnail-3 {
-  width: 100px;
-  height: 100px;
-}
-
-.u-section-2 .u-carousel-control-1 {
-  position: absolute;
-  left: 10px;
-  width: 40px;
-  height: 40px;
-}
-
-.u-section-2 .u-carousel-control-2 {
-  position: absolute;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-}
-
-@media (max-width: 767px) {
-  .u-section-2 .u-gallery-1 {
-    width: 540px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 636px;
-  }
-
-  .u-section-2 .u-gallery-1 {
-    height: 428px;
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
   }
 }
