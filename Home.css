@@ -1593,11 +1593,6 @@
   margin: 10px 0 0;
 }
 
-.u-section-10 .u-btn-2 {
-  background-image: none;
-  padding: 0;
-}
-
 .u-section-10 .u-image-2 {
   width: 70px;
   height: 70px;
@@ -1654,7 +1649,7 @@
   margin: -46px 0 0 92px;
 }
 
-.u-section-10 .u-btn-3 {
+.u-section-10 .u-btn-2 {
   background-image: none;
   padding: 0;
 }
@@ -1914,7 +1909,7 @@
     padding-left: 10px;
   }
 }.u-section-12 .u-sheet-1 {
-  min-height: 330px;
+  min-height: 382px;
 }
 
 .u-section-12 .u-text-1 {
@@ -1922,13 +1917,13 @@
 }
 
 .u-section-12 .u-list-1 {
-  margin-top: 4px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 44px;
 }
 
 .u-section-12 .u-repeater-1 {
   grid-template-columns: 33.3333% 33.3333% 33.3333%;
-  min-height: 231px;
+  min-height: 268px;
   grid-gap: 0px 0px;
   grid-auto-columns: 33.3333%;
 }
@@ -1938,15 +1933,16 @@
 }
 
 .u-section-12 .u-icon-1 {
-  height: 80px;
-  width: 80px;
+  height: 146px;
+  width: 146px;
   background-image: none;
   color: rgb(255, 255, 255) !important;
   margin: 0 auto;
+  padding: 0;
 }
 
 .u-section-12 .u-text-2 {
-  margin: 20px auto 0;
+  margin: 19px auto 0;
 }
 
 .u-section-12 .u-btn-1 {
@@ -1959,14 +1955,15 @@
 }
 
 .u-section-12 .u-icon-2 {
-  height: 80px;
-  width: 80px;
+  height: 146px;
+  width: 146px;
   background-image: none;
   margin: 0 auto;
+  padding: 0;
 }
 
 .u-section-12 .u-text-3 {
-  margin: 20px auto 0;
+  margin: 19px auto 0;
 }
 
 .u-section-12 .u-btn-2 {
@@ -1979,14 +1976,15 @@
 }
 
 .u-section-12 .u-icon-3 {
-  height: 80px;
-  width: 80px;
+  height: 146px;
+  width: 146px;
   background-image: none;
   margin: 0 auto;
+  padding: 0;
 }
 
 .u-section-12 .u-text-4 {
-  margin: 20px auto 0;
+  margin: 19px auto 0;
 }
 
 .u-section-12 .u-container-layout-4 {
@@ -1994,14 +1992,15 @@
 }
 
 .u-section-12 .u-icon-4 {
-  height: 80px;
-  width: 80px;
+  height: 146px;
+  width: 146px;
   background-image: none;
   margin: 0 auto;
+  padding: 0;
 }
 
 .u-section-12 .u-text-5 {
-  margin: 20px auto 0;
+  margin: 19px auto 0;
 }
 
 .u-section-12 .u-gallery-nav-1 {
