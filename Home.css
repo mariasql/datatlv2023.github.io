@@ -610,7 +610,6 @@
 
 .u-section-4 .u-repeater-1 {
   grid-gap: 10px 10px;
-  grid-auto-columns: calc(33.3333% - 6.66667px);
   grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
   min-height: 375px;
 }
@@ -622,7 +621,7 @@
 .u-section-4 .u-image-2 {
   width: 177px;
   height: 161px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 .u-section-4 .u-container-layout-3 {
@@ -632,7 +631,7 @@
 .u-section-4 .u-image-3 {
   width: 177px;
   height: 161px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 .u-section-4 .u-container-layout-4 {
@@ -642,7 +641,7 @@
 .u-section-4 .u-image-4 {
   width: 177px;
   height: 161px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 .u-section-4 .u-container-layout-5 {
@@ -652,7 +651,7 @@
 .u-section-4 .u-image-5 {
   width: 177px;
   height: 161px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 .u-section-4 .u-container-layout-6 {
@@ -662,7 +661,7 @@
 .u-section-4 .u-image-6 {
   width: 177px;
   height: 161px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 .u-section-4 .u-container-layout-7 {
@@ -672,7 +671,7 @@
 .u-section-4 .u-image-7 {
   width: 177px;
   height: 161px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 @media (max-width: 1199px) {
@@ -693,8 +692,6 @@
   }
 
   .u-section-4 .u-repeater-1 {
-    grid-auto-columns: calc(33.333333333333336% - 6.66667px);
-    grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
     min-height: 310px;
   }
 }
@@ -714,8 +711,7 @@
   }
 
   .u-section-4 .u-repeater-1 {
-    grid-auto-columns: calc(50% - 5.0000025px);
-    grid-template-columns: repeat(2, calc(50% - 5.0000025px));
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
     min-height: 541px;
   }
 }
@@ -736,7 +732,6 @@
   }
 
   .u-section-4 .u-repeater-1 {
-    grid-auto-columns: calc(100% - 0px);
     grid-template-columns: 100%;
   }
 }
@@ -767,7 +762,6 @@
   }
 
   .u-section-4 .u-repeater-1 {
-    grid-auto-columns: calc(50% - 5px);
     grid-template-columns: calc(50% - 5px) calc(50% - 5px);
   }
 }.u-section-5 .u-sheet-1 {
