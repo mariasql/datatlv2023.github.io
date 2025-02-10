@@ -2321,21 +2321,26 @@
 }
 
 @media (max-width: 575px) {
+  .u-section-12 .u-sheet-1 {
+    min-height: 1289px;
+  }
+
   .u-section-12 .u-text-1 {
     width: auto;
-    margin-top: 0;
+    margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-12 .u-list-1 {
     width: 192px;
+    height: auto;
     margin: 3px auto 60px -50px;
   }
 
   .u-section-12 .u-repeater-1 {
     grid-template-columns: 50% 50%;
-    min-height: 1163px;
+    min-height: 1259px;
   }
 
   .u-section-12 .u-icon-1 {
