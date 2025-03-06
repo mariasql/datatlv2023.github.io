@@ -4,7 +4,15 @@
 
 .u-section-1 .u-text-1 {
   width: 803px;
-  margin: 60px auto;
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  height: auto;
+  min-height: 250px;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
