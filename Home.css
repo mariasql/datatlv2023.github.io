@@ -1356,6 +1356,11 @@
   margin: 20px auto 0;
 }
 
+.u-section-9 .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-9 .u-text-3 {
   margin: 20px 0 0;
 }
@@ -1373,6 +1378,11 @@
   margin: 20px auto 0;
 }
 
+.u-section-9 .u-btn-2 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-9 .u-text-5 {
   margin: 20px 0 0;
 }
@@ -1388,6 +1398,11 @@
 
 .u-section-9 .u-text-6 {
   margin: 20px auto 0;
+}
+
+.u-section-9 .u-btn-3 {
+  background-image: none;
+  padding: 0;
 }
 
 .u-section-9 .u-text-7 {
@@ -1424,6 +1439,11 @@
   margin: 20px auto 0;
 }
 
+.u-section-9 .u-btn-4 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-9 .u-text-11 {
   margin: 20px 0 0;
 }
@@ -1441,7 +1461,7 @@
   margin: 20px auto 0;
 }
 
-.u-section-9 .u-btn-1 {
+.u-section-9 .u-btn-5 {
   background-image: none;
   padding: 0;
 }
