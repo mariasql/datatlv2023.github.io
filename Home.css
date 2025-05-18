@@ -2654,8 +2654,8 @@
 .u-section-13 .u-social-icons-1 {
   height: 60px;
   min-height: 16px;
-  width: 300px;
-  min-width: 124px;
+  width: 380px;
+  min-width: 160px;
   margin: 60px auto;
 }
 
@@ -2665,10 +2665,12 @@
 
 .u-section-13 .u-icon-3 {
   height: 60px;
-  color: rgb(210, 34, 21) !important;
 }
 
 .u-section-13 .u-icon-4 {
   height: 60px;
-  color: rgb(219, 83, 75) !important;
+}
+
+.u-section-13 .u-icon-5 {
+  height: 100%;
 }
