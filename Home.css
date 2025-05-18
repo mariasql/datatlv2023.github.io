@@ -2659,8 +2659,14 @@
   margin: 60px auto;
 }
 
+.u-section-13 .u-icon-1 {
+  color: rgb(0, 0, 0) !important;
+  height: 60px;
+}
+
 .u-section-13 .u-icon-2 {
-  height: 100%;
+  height: 60px;
+  color: rgb(255, 255, 255) !important;
 }
 
 .u-section-13 .u-icon-3 {
@@ -2672,5 +2678,6 @@
 }
 
 .u-section-13 .u-icon-5 {
-  height: 100%;
+  height: 60px;
+  color: rgb(197, 54, 164) !important;
 }
