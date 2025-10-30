@@ -9,19 +9,12 @@
 
 .u-section-1 .u-text-2 {
   width: 803px;
-  margin: 20px calc(((100% - 1140px) / 2) + 169px) 0;
+  margin: 20px calc(((100% - 1140px) / 2) + 169px) 60px;
 }
 
 .u-section-1 .u-btn-1 {
   background-image: none;
   padding: 0;
-}
-
-.u-section-1 .u-custom-html-1 {
-  height: auto;
-  min-height: 250px;
-  margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 @media (max-width: 1199px) {
