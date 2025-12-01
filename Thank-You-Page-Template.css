@@ -19,3 +19,9 @@
     margin-bottom: 60px;
   }
 }
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-2 {
+    margin-bottom: 60px;
+  }
+}
