@@ -601,14 +601,15 @@
 }
 
 .u-section-4 .u-list-1 {
-  width: 758px;
+  width: 1142px;
   margin: 62px auto 60px;
 }
 
 .u-section-4 .u-repeater-1 {
   grid-gap: 10px 10px;
-  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
   min-height: 102px;
+  grid-auto-columns: calc(33.3333% - 6.66667px);
 }
 
 .u-section-4 .u-container-layout-2 {
@@ -631,6 +632,16 @@
   margin: 1px auto 0;
 }
 
+.u-section-4 .u-container-layout-4 {
+  padding: 10px;
+}
+
+.u-section-4 .u-image-4 {
+  width: 200px;
+  height: 181px;
+  margin: 1px auto 0;
+}
+
 @media (max-width: 1199px) {
   .u-section-4 .u-image-1 {
     height: auto;
@@ -644,8 +655,13 @@
     margin-left: 339px;
   }
 
+  .u-section-4 .u-list-1 {
+    width: 940px;
+  }
+
   .u-section-4 .u-repeater-1 {
-    grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
+    min-height: 84px;
+    grid-auto-columns: calc(33.333333333333336% - 6.66667px);
   }
 }
 
@@ -665,6 +681,8 @@
 
   .u-section-4 .u-repeater-1 {
     grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    min-height: 204px;
+    grid-auto-columns: calc(50% - 5.0000025px);
   }
 }
 
@@ -685,6 +703,7 @@
 
   .u-section-4 .u-repeater-1 {
     grid-template-columns: 100%;
+    grid-auto-columns: calc(100% - 0px);
   }
 }
 
@@ -715,6 +734,7 @@
 
   .u-section-4 .u-repeater-1 {
     grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-auto-columns: 100%;
   }
 
   .u-section-4 .u-image-2 {
@@ -723,6 +743,11 @@
   }
 
   .u-section-4 .u-image-3 {
+    width: 110px;
+    height: 100px;
+  }
+
+  .u-section-4 .u-image-4 {
     width: 110px;
     height: 100px;
   }
@@ -2028,13 +2053,12 @@
 }
 
 .u-section-13 .u-icon-1 {
-  color: rgb(0, 0, 0) !important;
   height: 60px;
+  color: rgb(255, 255, 255) !important;
 }
 
 .u-section-13 .u-icon-2 {
   height: 60px;
-  color: rgb(255, 255, 255) !important;
 }
 
 .u-section-13 .u-icon-3 {
@@ -2043,9 +2067,12 @@
 
 .u-section-13 .u-icon-4 {
   height: 60px;
+  color: rgb(197, 54, 164) !important;
 }
 
-.u-section-13 .u-icon-5 {
-  height: 60px;
-  color: rgb(197, 54, 164) !important;
+@media (max-width: 575px) {
+  .u-section-13 .u-social-icons-1 {
+    width: 300px;
+    min-width: 124px;
+  }
 }
