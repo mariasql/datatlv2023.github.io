@@ -12,13 +12,15 @@
   margin: 68px auto 0;
 }
 
-.u-section-1 .u-btn-1 {
-  --radius: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  margin: 63px auto 60px;
+.u-section-1 .u-custom-html-1 {
+  margin: 30px auto 60px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-custom-html-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
 }
 
 @media (max-width: 991px) {
