@@ -1,149 +1,128 @@
- .u-section-1 {
-  min-height: 200px;
+/* ── Font alignment: use site fonts throughout ─────────────────── */
+.u-section-1,
+.u-section-2,
+.timeline,
+.timeline-item,
+.tl-date,
+.tl-event,
+.agenda-link {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+.u-section-1 .u-text-1,
+.u-section-2 .u-text-1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ── Section 1: Timeline ───────────────────────────────────────── */
+.u-section-1 {
+  padding: 60px 20px 50px;
+  background: #f4f7fb;
 }
 
 .u-section-1 .u-text-1 {
-  width: 803px;
-  margin: 60px auto 0;
+  margin: 0 auto 40px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.8rem;
 }
 
-.u-section-1 .u-text-2 {
-  margin: 20px 0 0;
-}
-
-.u-section-1 .u-btn-1 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-1 .u-custom-html-1 {
-  margin: 10px calc(((100% - 1140px) / 2) + 269px) 0 calc(((100% - 1140px) / 2) + 366px);
-}
-
-@media (max-width: 1199px) {
-   .u-section-1 {
-    min-height: 542px;
-  }
-
-  .u-section-1 .u-text-2 {
-    width: 408px;
-  }
-
-  .u-section-1 .u-custom-html-1 {
-    margin-right: calc(((100% - 940px) / 2) + 169px);
-    margin-left: calc(((100% - 940px) / 2) + 266px);
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-1 .u-text-1 {
-    width: 720px;
-    margin-left: calc(((100% - 720px) / 2));
-    margin-right: calc(((100% - 720px) / 2));
-  }
-
-  .u-section-1 .u-custom-html-1 {
-    margin-right: calc(((100% - 720px) / 2) + 59px);
-    margin-left: calc(((100% - 720px) / 2) + 156px);
-  }
-}
-
-@media (max-width: 767px) {
-   .u-section-1 {
-    min-height: 465px;
-  }
-
-  .u-section-1 .u-text-1 {
-    width: 540px;
-    margin-left: calc(((100% - 540px) / 2));
-    margin-right: calc(((100% - 540px) / 2));
-  }
-
-  .u-section-1 .u-text-2 {
-    margin-right: calc(((100% - 540px) / 2));
-  }
-
-  .u-section-1 .u-custom-html-1 {
-    margin-right: calc(((100% - 540px) / 2));
-    margin-bottom: 47px;
-    margin-left: calc(((100% - 540px) / 2) + 35px);
-  }
-}
-
-@media (max-width: 575px) {
-   .u-section-1 {
-    min-height: 489px;
-  }
-
-  .u-section-1 .u-text-1 {
-    width: 340px;
-    margin-left: calc(((100% - 340px) / 2));
-    margin-right: calc(((100% - 340px) / 2));
-  }
-
-  .u-section-1 .u-text-2 {
-    width: 340px;
-    margin-left: calc(((100% - 340px) / 2));
-    margin-right: calc(((100% - 340px) / 2));
-  }
-
-  .u-section-1 .u-custom-html-1 {
-    margin-left: calc(((100% - 340px) / 2));
-    margin-right: calc(((100% - 340px) / 2));
-    margin-bottom: 33px;
-  }
-}.u-section-2 .u-sheet-1 {
-  min-height: 400px;
-}
-
-.u-section-2 .u-text-1 {
-  width: 803px;
+/* Timeline rows */
+.timeline {
+  max-width: 660px;
   margin: 0 auto;
 }
 
+.timeline-item {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #dce4ef;
+  font-size: 1.05rem;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.tl-date {
+  flex: 0 0 200px;
+  text-align: right;
+  font-weight: 700;
+  color: #478ac9;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.tl-event {
+  flex: 1;
+  text-align: left;
+  color: #333;
+}
+
+/* Agenda link */
+.agenda-link {
+  text-align: center;
+  padding: 24px 20px 16px;
+}
+
+.agenda-link a {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #478ac9;
+  text-decoration: none;
+  border: 1px solid #478ac9;
+  border-radius: 4px;
+  padding: 8px 22px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.agenda-link a:hover {
+  background: #478ac9;
+  color: #fff;
+}
+
+/* ── Section 2: Summit Agenda widget ──────────────────────────── */
+.u-section-2 {
+  padding: 40px 0 0;
+}
+
+.u-section-2 .u-text-1 {
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 0 auto 30px;
+}
+
+.u-section-2 .u-sheet-1 {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .u-section-2 .u-custom-html-1 {
-  height: auto;
-  min-height: 69px;
-  width: 100px;
-  margin: 42px 0 21px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-2 .u-custom-html-1 {
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-2 .u-text-1 {
-    width: 720px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-2 .u-text-1 {
-    width: 540px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-2 .u-text-1 {
-    width: 340px;
-  }
-}
-
-/* Ensure Sessionize GridSmart spans full width on Sessions page */
-.u-section-1 .u-custom-html-1,
-.u-section-2 .u-custom-html-1 {
-  margin: 10px 5px !important;
   width: 100% !important;
   max-width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
 }
 
-/* Reduce default horizontal padding of sheet on agenda section */
-.u-section-2 .u-sheet-1 {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .tl-date {
+    flex: none;
+    text-align: left;
+  }
 }
