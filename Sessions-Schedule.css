@@ -133,3 +133,17 @@
     width: 340px;
   }
 }
+
+/* Ensure Sessionize GridSmart spans full width on Sessions page */
+.u-section-1 .u-custom-html-1,
+.u-section-2 .u-custom-html-1 {
+  margin: 10px 5px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Reduce default horizontal padding of sheet on agenda section */
+.u-section-2 .u-sheet-1 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
