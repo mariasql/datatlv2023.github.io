@@ -632,7 +632,7 @@
 .u-section-4 .u-repeater-2 {
   grid-gap: 10px 10px;
   grid-template-columns: calc(50% - 5px) calc(50% - 5px);
-  min-height: 412px;
+  min-height: 623px;
 }
 
 .u-section-4 .u-container-layout-3 {
@@ -670,6 +670,26 @@
 }
 
 .u-section-4 .u-image-6 {
+  width: 200px;
+  height: 181px;
+  margin: 7px auto 0;
+}
+
+.u-section-4 .u-container-layout-7 {
+  padding: 3px 0;
+}
+
+.u-section-4 .u-image-7 {
+  width: 200px;
+  height: 181px;
+  margin: 7px auto 0;
+}
+
+.u-section-4 .u-container-layout-8 {
+  padding: 3px 0;
+}
+
+.u-section-4 .u-image-8 {
   width: 200px;
   height: 181px;
   margin: 7px auto 0;
