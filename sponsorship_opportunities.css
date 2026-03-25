@@ -425,21 +425,84 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-table-cell-47 {
+  .u-section-2 .u-table-cell-47,
+  .u-section-2 .u-table-cell-48,
+  .u-section-2 .u-table-cell-49,
+  .u-section-2 .u-table-cell-50 {
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  .u-section-2 .u-table-cell-48 {
-    margin-right: 226px;
+/* Mobile responsiveness improvements */
+@media (max-width: 767px) {
+  /* Make sponsorship table horizontally scrollable */
+  .u-section-2 .u-sheet-1 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .u-section-2 .u-table-cell-49 {
-    margin-left: 275px;
-    margin-right: 159px;
+  .u-section-2 .u-table-1 {
+    min-width: 500px;
   }
 
-  .u-section-2 .u-table-cell-50 {
-    margin-left: 342px;
+  /* Shrink icons to fit narrow columns */
+  .u-section-2 [class*="u-icon-"] {
+    font-size: 2em !important;
+    width: 36px !important;
+    height: 44px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Reduce hero heading size */
+  .u-section-1 .u-text-1 {
+    font-size: 1.5rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Keep table scrollable on very small phones */
+  .u-section-2 .u-sheet-1 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .u-section-2 .u-table-1 {
+    min-width: 460px;
+  }
+
+  /* Further shrink icons on very small screens */
+  .u-section-2 [class*="u-icon-"] {
+    font-size: 1.5em !important;
+    width: 28px !important;
+    height: 34px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Reduce hero heading and fix padding */
+  .u-section-1 .u-text-1 {
+    font-size: 1.25rem;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* Ensure table cells wrap text properly */
+  .u-section-2 .u-table-entity-1 td,
+  .u-section-2 .u-table-entity-1 th {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    word-break: break-word;
   }
 }
