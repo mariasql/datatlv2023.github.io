@@ -1,46 +1,71 @@
 /* ── Hero Section ─────────────────────────────────────────────────── */
 
 .sp-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  min-height: 500px;
-  overflow: hidden;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 420px;
+  width: 100%;
 }
 
 .sp-hero-photo {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
   flex: 1 1 50%;
+  min-width: 260px;
+  min-height: 260px;
   background: url("images/20240229-0604K80.jpg") center / cover no-repeat;
-  min-height: 300px;
 }
 
 .sp-hero-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
   flex: 1 1 50%;
+  min-width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  padding: 52px 56px;
+  padding: 48px 52px;
   background: url("images/dff.jpg") center / cover no-repeat;
   position: relative;
+  /* override nicepage section > * { position: relative } — already relative, fine */
 }
 
+/* Dark overlay — use individual inset props for older iOS Safari */
 .sp-hero-content::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background: rgba(12, 28, 55, 0.80);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(12, 28, 55, 0.82);
+  z-index: 0;
 }
 
-.sp-hero-content > * {
+/* Ensure text sits above the overlay */
+.sp-hero-title,
+.sp-hero-contact {
   position: relative;
   z-index: 1;
 }
 
 .sp-hero-title {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.85rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.5;
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 }
 
 .sp-hero-contact {
@@ -58,38 +83,49 @@
   text-decoration: underline;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
-  .sp-hero-title {
-    font-size: 1.55rem;
-  }
-
   .sp-hero-content {
     padding: 40px 36px;
   }
+
+  .sp-hero-title {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 700px) {
-  .sp-hero {
-    flex-direction: column;
-  }
-
+/* Phone — stack vertically */
+@media (max-width: 767px) {
   .sp-hero-photo {
-    flex: none;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    min-height: 200px;
     height: 220px;
   }
 
   .sp-hero-content {
-    padding: 32px 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 30px 22px;
   }
 
   .sp-hero-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 }
 
+/* Small phones */
 @media (max-width: 420px) {
+  .sp-hero-photo {
+    height: 180px;
+  }
+
   .sp-hero-content {
-    padding: 24px 18px;
+    padding: 22px 16px;
   }
 
   .sp-hero-title {
@@ -97,27 +133,37 @@
   }
 
   .sp-hero-contact {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    line-height: 1.7;
   }
 }
 
 /* ── Sponsorship Packages Table ───────────────────────────────────── */
 
 .sp-packages {
-  padding: 48px 24px 56px;
+  padding: 44px 20px 52px;
   background: #f0f2f5;
+  /* Contain the table scroll — prevent page-level overflow on iOS */
+  overflow: hidden;
 }
 
 .sp-packages-inner {
   max-width: 1060px;
+  width: 100%;
   margin: 0 auto;
 }
 
+/* The scroll container — must be display:block with explicit width */
 .sp-scroll {
-  overflow-x: auto;
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  /* Force hardware-accelerated layer so iOS respects overflow-x */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .sp-table {
@@ -127,12 +173,14 @@
   background: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 0.88rem;
+  /* Prevent table from shrinking below min-width */
+  table-layout: fixed;
 }
 
 /* Header row */
 .sp-col-feature {
   width: 38%;
-  padding: 18px 20px;
+  padding: 16px 18px;
   background: #1a2e4a;
   color: #ffffff;
   text-align: left;
@@ -140,48 +188,50 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  border-bottom: none;
 }
 
 .sp-col-tier {
   width: 15.5%;
-  padding: 14px 10px;
+  padding: 14px 8px;
   text-align: center;
   color: #ffffff;
-  border-left: 1px solid rgba(255,255,255,0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.sp-bronze  { background: #8B6220; }
-.sp-silver  { background: #5a6472; }
-.sp-gold    { background: #9a7b10; }
+.sp-bronze   { background: #8B6220; }
+.sp-silver   { background: #5a6472; }
+.sp-gold     { background: #9a7b10; }
 .sp-platinum { background: #1a2e4a; }
 
 .sp-tier-name {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .sp-tier-price {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   opacity: 0.82;
-  margin-top: 4px;
+  margin-top: 3px;
+  white-space: nowrap;
 }
 
 /* Body rows */
 .sp-feature {
-  padding: 11px 20px;
+  padding: 11px 18px;
   text-align: left;
   font-size: 0.84rem;
   color: #2d3748;
   border-bottom: 1px solid #e4e8ee;
   background: #f8f9fb;
   line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .sp-cell {
-  padding: 11px 8px;
+  padding: 10px 6px;
   text-align: center;
   border-bottom: 1px solid #e4e8ee;
   border-left: 1px solid #e4e8ee;
@@ -189,74 +239,88 @@
   background: #ffffff;
 }
 
-tr:nth-child(odd) .sp-feature {
-  background: #ffffff;
-}
+tr:nth-child(odd) .sp-feature { background: #ffffff; }
+tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
 
-tr:nth-child(odd) .sp-cell {
-  background: #fafbfc;
-}
-
-/* Check mark — pure CSS circle with tick */
+/* Check mark — pure CSS circle + L-shaped tick */
 .sp-check {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   background: #25AE88;
   border-radius: 50%;
   position: relative;
-  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 .sp-check::after {
   content: '';
   position: absolute;
-  top: 46%;
+  top: 44%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
-  width: 9px;
-  height: 5px;
+  width: 8px;
+  height: 4px;
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
 }
 
-/* Numeric values (vouchers, dinners) */
+/* Numeric values */
 .sp-value {
   display: inline-block;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #1a2e4a;
 }
 
+/* Mobile table adjustments */
 @media (max-width: 640px) {
   .sp-packages {
-    padding: 28px 10px 36px;
+    padding: 24px 8px 32px;
   }
 
   .sp-table {
-    min-width: 460px;
-    font-size: 0.8rem;
+    min-width: 440px;
+    font-size: 0.75rem;
   }
 
-  .sp-feature {
-    padding: 9px 14px;
-    font-size: 0.78rem;
+  .sp-col-feature {
+    padding: 12px 10px;
   }
 
-  .sp-cell {
-    padding: 9px 6px;
-  }
-
-  .sp-check {
-    width: 20px;
-    height: 20px;
+  .sp-col-tier {
+    padding: 12px 4px;
   }
 
   .sp-tier-name {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
 
   .sp-tier-price {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
+  }
+
+  .sp-feature {
+    padding: 9px 10px;
+    font-size: 0.73rem;
+  }
+
+  .sp-cell {
+    padding: 9px 4px;
+  }
+
+  .sp-check {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sp-check::after {
+    width: 6px;
+    height: 3px;
+  }
+
+  .sp-value {
+    font-size: 0.85rem;
   }
 }
