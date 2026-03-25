@@ -436,16 +436,16 @@
 
 /* Mobile responsiveness improvements */
 @media (max-width: 767px) {
-  /* Make sponsorship table horizontally scrollable */
-  .u-section-2 .u-sheet-1 {
-    overflow-x: auto;
+  /* Make the table wrapper scrollable */
+  .u-section-2 .u-table-1 {
+    overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
-  .u-section-2 .u-table-1 {
-    min-width: 500px;
+  /* Give the actual table a minimum width so it scrolls instead of squeezing */
+  .u-section-2 .u-table-entity-1 {
+    min-width: 500px !important;
+    width: 100%;
   }
 
   /* Shrink icons to fit narrow columns */
@@ -458,25 +458,24 @@
 
   /* Reduce hero heading size */
   .u-section-1 .u-text-1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .u-section-1 .u-text-2 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
 
 @media (max-width: 575px) {
   /* Keep table scrollable on very small phones */
-  .u-section-2 .u-sheet-1 {
-    overflow-x: auto;
+  .u-section-2 .u-table-1 {
+    overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
-    padding-left: 6px;
-    padding-right: 6px;
   }
 
-  .u-section-2 .u-table-1 {
-    min-width: 460px;
+  .u-section-2 .u-table-entity-1 {
+    min-width: 460px !important;
+    width: 100%;
   }
 
   /* Further shrink icons on very small screens */
@@ -489,20 +488,20 @@
 
   /* Reduce hero heading and fix padding */
   .u-section-1 .u-text-1 {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 
   .u-section-1 .u-container-layout-2 {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 20px !important;
   }
 
-  /* Ensure table cells wrap text properly */
+  /* Reduce table cell font size and padding */
   .u-section-2 .u-table-entity-1 td,
   .u-section-2 .u-table-entity-1 th {
-    font-size: 0.8rem;
-    padding: 6px 8px;
+    font-size: 0.8rem !important;
+    padding: 6px 8px !important;
     word-break: break-word;
   }
 }
