@@ -168,7 +168,7 @@
 
 .sp-table {
   width: 100%;
-  min-width: 520px;
+  min-width: 560px;
   border-collapse: collapse;
   background: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -179,7 +179,7 @@
 
 /* Header row */
 .sp-col-feature {
-  width: 38%;
+  width: 28%;
   padding: 16px 18px;
   background: #1a2e4a;
   color: #ffffff;
@@ -191,7 +191,7 @@
 }
 
 .sp-col-tier {
-  width: 15.5%;
+  width: 18%;
   padding: 14px 8px;
   text-align: center;
   color: #ffffff;
@@ -281,7 +281,7 @@ tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
   }
 
   .sp-table {
-    min-width: 440px;
+    min-width: 560px;
     font-size: 0.75rem;
   }
 
