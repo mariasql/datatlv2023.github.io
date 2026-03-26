@@ -291,3 +291,16 @@
     min-height: 248px;
   }
 }
+
+/* ── Mobile: force animated images visible ────────────────────────── */
+/* Nicepage JS sets opacity:0 as initial animation state and reveals   */
+/* elements on scroll-into-view. That trigger doesn't fire on mobile,  */
+/* so we reset opacity and transform for all breakpoints ≤ 991px.      */
+@media (max-width: 991px) {
+  .u-section-1 [data-animation-name] {
+    opacity: 1 !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+}
