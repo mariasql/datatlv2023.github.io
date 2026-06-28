@@ -1146,9 +1146,10 @@
 }
 
 .u-section-8 .u-repeater-1 {
-  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  grid-template-columns: 50% 50%;
   min-height: 980px;
   grid-gap: 0px 0px;
+  grid-auto-columns: 50%;
 }
 
 .u-section-8 .u-container-layout-1 {
@@ -1156,7 +1157,7 @@
 }
 
 .u-section-8 .u-image-1 {
-  height: 219px;
+  height: 430px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1179,7 +1180,7 @@
 }
 
 .u-section-8 .u-image-2 {
-  height: 219px;
+  height: 430px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1202,7 +1203,7 @@
 }
 
 .u-section-8 .u-image-3 {
-  height: 219px;
+  height: 430px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1225,7 +1226,7 @@
 }
 
 .u-section-8 .u-image-4 {
-  height: 219px;
+  height: 430px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1238,126 +1239,60 @@
   margin: 20px 0 0;
 }
 
-.u-section-8 .u-container-layout-5 {
-  padding: 20px 30px;
-}
-
-.u-section-8 .u-image-5 {
-  height: 219px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-8 .u-text-10 {
-  margin: 20px auto 0;
-}
-
-.u-section-8 .u-btn-4 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-8 .u-text-11 {
-  margin: 20px 0 0;
-}
-
-.u-section-8 .u-container-layout-6 {
-  padding: 20px 30px;
-}
-
-.u-section-8 .u-image-6 {
-  height: 219px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-8 .u-text-12 {
-  margin: 20px auto 0;
-}
-
-.u-section-8 .u-btn-5 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-8 .u-text-13 {
-  margin: 20px 0 0;
-}
-
 @media (max-width: 1199px) {
   .u-section-8 .u-repeater-1 {
-    grid-template-columns: repeat(3, 33.333333333333336%);
+    grid-template-columns: repeat(2, 50%);
     min-height: 808px;
   }
 
   .u-section-8 .u-image-1 {
-    height: 173px;
+    height: 346px;
   }
 
   .u-section-8 .u-image-2 {
-    height: 173px;
+    height: 346px;
   }
 
   .u-section-8 .u-image-3 {
-    height: 173px;
+    height: 346px;
   }
 
   .u-section-8 .u-image-4 {
-    height: 173px;
-  }
-
-  .u-section-8 .u-image-5 {
-    height: 173px;
-  }
-
-  .u-section-8 .u-image-6 {
-    height: 173px;
+    height: 346px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-8 .u-repeater-1 {
-    grid-template-columns: repeat(2, 50%);
-    min-height: 1393px;
+    grid-template-columns: 100%;
+    grid-auto-columns: 100%;
   }
 
   .u-section-8 .u-image-1 {
-    height: 205px;
+    height: 557px;
   }
 
   .u-section-8 .u-image-2 {
-    height: 205px;
+    height: 557px;
   }
 
   .u-section-8 .u-image-3 {
-    height: 205px;
+    height: 557px;
   }
 
   .u-section-8 .u-image-4 {
-    height: 205px;
-  }
-
-  .u-section-8 .u-image-5 {
-    height: 205px;
-  }
-
-  .u-section-8 .u-image-6 {
-    height: 205px;
+    height: 557px;
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-8 .u-repeater-1 {
-    grid-template-columns: 100%;
-  }
-
   .u-section-8 .u-container-layout-1 {
     padding-left: 10px;
     padding-right: 10px;
   }
 
   .u-section-8 .u-image-1 {
-    height: 355px;
+    height: 439px;
   }
 
   .u-section-8 .u-container-layout-2 {
@@ -1366,7 +1301,7 @@
   }
 
   .u-section-8 .u-image-2 {
-    height: 355px;
+    height: 439px;
   }
 
   .u-section-8 .u-container-layout-3 {
@@ -1375,7 +1310,7 @@
   }
 
   .u-section-8 .u-image-3 {
-    height: 355px;
+    height: 439px;
   }
 
   .u-section-8 .u-container-layout-4 {
@@ -1384,25 +1319,7 @@
   }
 
   .u-section-8 .u-image-4 {
-    height: 355px;
-  }
-
-  .u-section-8 .u-container-layout-5 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-image-5 {
-    height: 355px;
-  }
-
-  .u-section-8 .u-container-layout-6 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-image-6 {
-    height: 355px;
+    height: 439px;
   }
 }
 
@@ -1417,27 +1334,19 @@
   }
 
   .u-section-8 .u-image-1 {
-    height: 218px;
+    height: 270px;
   }
 
   .u-section-8 .u-image-2 {
-    height: 218px;
+    height: 270px;
   }
 
   .u-section-8 .u-image-3 {
-    height: 218px;
+    height: 270px;
   }
 
   .u-section-8 .u-image-4 {
-    height: 218px;
-  }
-
-  .u-section-8 .u-image-5 {
-    height: 218px;
-  }
-
-  .u-section-8 .u-image-6 {
-    height: 218px;
+    height: 270px;
   }
 } .u-section-9 {
   background-image: none;
