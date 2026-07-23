@@ -695,6 +695,16 @@
   margin: 7px auto 0;
 }
 
+.u-section-4 .u-container-layout-9 {
+  padding: 3px 0;
+}
+
+.u-section-4 .u-image-9 {
+  width: 200px;
+  height: 181px;
+  margin: 7px auto 0;
+}
+
 @media (max-width: 1199px) {
   .u-section-4 .u-image-1 {
     width: 940px;
