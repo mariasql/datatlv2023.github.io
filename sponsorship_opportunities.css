@@ -1,80 +1,42 @@
-/* ── Hero Section ─────────────────────────────────────────────────── */
-
-.sp-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  min-height: 420px;
-  width: 100%;
+.sp-hero-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1fr);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
 }
 
 .sp-hero-photo {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-  min-width: 260px;
-  min-height: 260px;
+  min-height: 340px;
   background: url("images/20240229-0604K80.jpg") center / cover no-repeat;
 }
 
 .sp-hero-content {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-  min-width: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: clamp(26px, 4vw, 42px);
+  background: linear-gradient(140deg, #0d2241, #1f4f8c);
+  color: #ffffff;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  padding: 48px 52px;
-  background: url("images/dff.jpg") center / cover no-repeat;
-  position: relative;
-  /* override nicepage section > * { position: relative } — already relative, fine */
-}
-
-/* Dark overlay — use individual inset props for older iOS Safari */
-.sp-hero-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(12, 28, 55, 0.82);
-  z-index: 0;
-}
-
-/* Ensure text sits above the overlay */
-.sp-hero-title,
-.sp-hero-contact {
-  position: relative;
-  z-index: 1;
 }
 
 .sp-hero-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.85rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.5;
-  margin: 0 0 24px;
+  margin: 0 0 16px;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1.45;
 }
 
 .sp-hero-contact {
-  font-size: 1rem;
-  line-height: 1.9;
+  margin: 0;
+  color: #d7e6fa;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 .sp-hero-contact a {
-  color: #7ec8e3;
+  color: #9ad6ff;
   text-decoration: none;
 }
 
@@ -83,151 +45,68 @@
   text-decoration: underline;
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .sp-hero-content {
-    padding: 40px 36px;
-  }
-
-  .sp-hero-title {
-    font-size: 1.5rem;
-  }
-}
-
-/* Phone — stack vertically */
-@media (max-width: 767px) {
-  .sp-hero-photo {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    width: 100%;
-    min-height: 200px;
-    height: 220px;
-  }
-
-  .sp-hero-content {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    width: 100%;
-    padding: 30px 22px;
-  }
-
-  .sp-hero-title {
-    font-size: 1.25rem;
-  }
-}
-
-/* Small phones */
-@media (max-width: 420px) {
-  .sp-hero-photo {
-    height: 180px;
-  }
-
-  .sp-hero-content {
-    padding: 22px 16px;
-  }
-
-  .sp-hero-title {
-    font-size: 1.1rem;
-  }
-
-  .sp-hero-contact {
-    font-size: 0.88rem;
-    line-height: 1.7;
-  }
-}
-
-/* ── Sponsorship Packages Table ───────────────────────────────────── */
-
 .sp-packages {
-  padding: 44px 20px 52px;
-  background: #f0f2f5;
-  /* Contain the table scroll — prevent page-level overflow on iOS */
-  overflow: hidden;
+  background: transparent;
 }
 
-.sp-packages-inner {
-  max-width: 1060px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* The scroll container — must be display:block with explicit width */
 .sp-scroll {
-  display: block;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
-  /* Force hardware-accelerated layer so iOS respects overflow-x */
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  background: #ffffff;
 }
 
 .sp-table {
   width: 100%;
-  min-width: 560px;
+  min-width: 700px;
   border-collapse: collapse;
-  background: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.88rem;
-  /* Prevent table from shrinking below min-width */
+  font-size: 0.9rem;
   table-layout: fixed;
 }
 
-/* Header row */
 .sp-col-feature {
-  width: 28%;
+  width: 34%;
   padding: 16px 18px;
   background: #1a2e4a;
   color: #ffffff;
   text-align: left;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
 .sp-col-tier {
-  width: 18%;
+  width: 16.5%;
   padding: 14px 8px;
   text-align: center;
   color: #ffffff;
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.sp-bronze   { background: #8B6220; }
-.sp-silver   { background: #5a6472; }
-.sp-gold     { background: #9a7b10; }
+.sp-bronze { background: #8b6220; }
+.sp-silver { background: #5a6472; }
+.sp-gold { background: #9a7b10; }
 .sp-platinum { background: #1a2e4a; }
 
 .sp-tier-name {
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.76rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .sp-tier-price {
   font-size: 0.68rem;
-  opacity: 0.82;
+  opacity: 0.9;
   margin-top: 3px;
-  white-space: nowrap;
 }
 
-/* Body rows */
 .sp-feature {
-  padding: 11px 18px;
+  padding: 12px 16px;
   text-align: left;
-  font-size: 0.84rem;
   color: #2d3748;
   border-bottom: 1px solid #e4e8ee;
   background: #f8f9fb;
-  line-height: 1.4;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  line-height: 1.45;
 }
 
 .sp-cell {
@@ -239,26 +118,29 @@
   background: #ffffff;
 }
 
-tr:nth-child(odd) .sp-feature { background: #ffffff; }
-tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
+tr:nth-child(odd) .sp-feature {
+  background: #ffffff;
+}
 
-/* Check mark — pure CSS circle + L-shaped tick */
+tr:nth-child(odd) .sp-cell {
+  background: #fafbfc;
+}
+
 .sp-check {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: #25AE88;
+  background: #25ae88;
   border-radius: 50%;
   position: relative;
   vertical-align: middle;
 }
 
 .sp-check::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 44%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
   width: 8px;
   height: 4px;
@@ -266,7 +148,6 @@ tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
   border-bottom: 2px solid #ffffff;
 }
 
-/* Numeric values */
 .sp-value {
   display: inline-block;
   font-weight: 700;
@@ -274,15 +155,20 @@ tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
   color: #1a2e4a;
 }
 
-/* Mobile table adjustments */
-@media (max-width: 640px) {
-  .sp-packages {
-    padding: 24px 8px 32px;
+@media (max-width: 900px) {
+  .sp-hero-card {
+    grid-template-columns: 1fr;
   }
 
+  .sp-hero-photo {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
   .sp-table {
-    min-width: 560px;
-    font-size: 0.75rem;
+    min-width: 640px;
+    font-size: 0.78rem;
   }
 
   .sp-col-feature {
@@ -293,17 +179,8 @@ tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
     padding: 12px 4px;
   }
 
-  .sp-tier-name {
-    font-size: 0.68rem;
-  }
-
-  .sp-tier-price {
-    font-size: 0.6rem;
-  }
-
   .sp-feature {
     padding: 9px 10px;
-    font-size: 0.73rem;
   }
 
   .sp-cell {
@@ -318,9 +195,5 @@ tr:nth-child(odd) .sp-cell    { background: #fafbfc; }
   .sp-check::after {
     width: 6px;
     height: 3px;
-  }
-
-  .sp-value {
-    font-size: 0.85rem;
   }
 }
