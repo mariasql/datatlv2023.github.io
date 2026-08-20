@@ -753,15 +753,15 @@ p {
   max-height: 72px;
 }
 
-.sponsor-cta-tile {
+.sponsors-grid a.sponsor-cta-tile {
   min-height: 136px;
   padding: 22px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #0b1f3f, #17447f);
-  color: #000000 !important;
+  justify-content: flex-start;
+  text-align: left;
+  background: var(--surface);
+  color: #0057E7 !important;
   border: 1px solid rgba(255, 255, 255, 0.22);
   text-decoration: none;
 }
