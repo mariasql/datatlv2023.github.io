@@ -760,7 +760,7 @@ p {
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  background: var(--surface);
+  background: #EAF2FF;
   color: #0057E7 !important;
   border: 1px solid rgba(255, 255, 255, 0.22);
   text-decoration: none;
