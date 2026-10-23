@@ -757,6 +757,14 @@ p {
   max-height: 120px;
 }
 
+.sponsors-grid img.scylla-logo {
+  max-height: 96px;
+}
+
+.sponsors-grid img.big-data-boutique-logo {
+  max-height: 96px;
+}
+
 .sponsors-grid a.sponsor-cta-tile {
   min-height: 136px;
   padding: 22px;
