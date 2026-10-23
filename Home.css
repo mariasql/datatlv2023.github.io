@@ -753,6 +753,10 @@ p {
   max-height: 72px;
 }
 
+.sponsors-grid img.awide-logo {
+  max-height: 100px;
+}
+
 .sponsors-grid a.sponsor-cta-tile {
   min-height: 136px;
   padding: 22px;
