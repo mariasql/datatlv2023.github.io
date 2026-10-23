@@ -806,6 +806,14 @@ p {
   .sponsors-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .sponsors-grid a.sponsor-cta-tile {
+    grid-column: 1 / -1;
+    min-height: 80px;
+    padding: 16px 22px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .sponsors-low {
