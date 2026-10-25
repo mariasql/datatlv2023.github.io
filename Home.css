@@ -753,6 +753,18 @@ p {
   max-height: 72px;
 }
 
+.sponsors-grid img.awide-logo {
+  max-height: 120px;
+}
+
+.sponsors-grid img.scylla-logo {
+  max-height: 96px;
+}
+
+.sponsors-grid img.big-data-boutique-logo {
+  max-height: 96px;
+}
+
 .sponsors-grid a.sponsor-cta-tile {
   min-height: 136px;
   padding: 22px;
@@ -793,6 +805,14 @@ p {
 @media (min-width: 900px) {
   .sponsors-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sponsors-grid a.sponsor-cta-tile {
+    grid-column: 1 / -1;
+    min-height: 80px;
+    padding: 16px 22px;
+    justify-content: center;
+    text-align: center;
   }
 }
 
