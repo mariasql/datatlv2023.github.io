@@ -814,6 +814,14 @@ p {
     justify-content: center;
     text-align: center;
   }
+
+  .sponsors-grid a.sponsor-cta-tile {
+    grid-column: 1 / -1;
+    min-height: 80px;
+    padding: 16px 22px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .sponsors-low {
